@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script
+      src="https://kit.fontawesome.com/8a3ba68cc1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+    <!-- Main  -->
+
+
+    <main>
+      <div class="container">
+
+        <!-- Weather Output  -->
+
+
+        <div class="weather">
+          <div class="weather-details">
+            <span id="temp">27°</span>
+            <div id="location"><span>Shadipur</span> <span></span></div>
+            <div id="weather-type">
+              <img src="icon/sun.png" alt="icon" id="weatherImg" /><span id="weatherType">Clear</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Search and details  -->
+
+
+        <div class="output-box">
+          <div class="search-box">
+            <input type="text" id="input-city" placeholder="Enter Location" value="New Delhi" />
+            <span class="search" id="search"><img src="icon/search.svg" alt="" /></span>
+          </div>
+
+
+
+      <!-- List of cities -->
+
+
+      <div class="demo-cities utility">
+        <ul id="demo">
+          <li>New Delhi</li>
+          <li>Mumbai</li>
+          <li>Uttarakhand</li>
+          <li>Bangalore</li>
+        </ul>
+      </div>
+      <hr class="divider">
+
+      <div class="other-details utility">
+        <h3>Weather Details</h3>
+        
+        <ul>
+          <li><span>Max</span>  <span class="fetched-data" id="max">--</span></li>
+          <li><span>Min</span>  <span class="fetched-data" id="min">--</span></li>
+          <li><span>Humidity</span>  <span class="fetched-data" id="humidity">--</span></li>
+          <li><span>Wind</span>  <span class="fetched-data" id="wind">--</span></li>
+        </ul>
+      </div>
+      <hr class="divider">
+
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
